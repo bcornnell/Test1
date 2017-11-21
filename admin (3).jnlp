@@ -1,0 +1,25 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://ashadmin.icore.com/admin" href="admin.jnlp">
+  <information>
+    <title>M6 Administration</title>
+    <vendor>BroadSoft</vendor>
+    <homepage href="index.html" />
+    <description>For the Creation and Maintenance of the M6 System</description>
+    <icon href="images/VocalData.gif"/>
+    <icon kind="splash" href="images/logo.gif"/> 
+  </information>
+  <security> 
+      <all-permissions/> 
+  </security> 
+  <resources>
+    <j2se version="1.5+" initial-heap-size="64m" max-heap-size="768m"/>
+    <jar href="admin.jar"/>
+    <jar href="audittool.jar"/>
+    <jar href="log4j-1.2.8.jar"/>
+  </resources>
+  <application-desc main-class="com.vocaldata.administration.Administration">
+    <argument>http://ashadmin.icore.com/admin</argument>
+  </application-desc>
+</jnlp>
